@@ -1,32 +1,32 @@
-extends java.lang.Object
+
 
 public class PongBall {
-    private double xVelocity;
-    private double yVelocity;
+    private int xVelocity, yVelocity, x, y;
 
-    PongBall(int x,
-             int y,
-             int xVelocity,
-             int yVelocity){
+    PongBall(int initX, int initY, int initXVel, int initYVel){
+        x = initX;
+        y= initY;
+        xVelocity = initXVel;
+        yVelocity = initYVel;
+    
 
     }
-    void bounceX(){
-        xVelocity = -1 * xVelocity
+    public void bounceX(){
+        xVelocity = -1 * xVelocity;
        
     }
-    void bounceY(){
-        yVelocity = -1 * yVelocity
+    public void bounceY(){
+        yVelocity = -1 * yVelocity;
     }
-    int getX(){
-        int x1 = getX();
-    }
-    int getY(){
-        int y1 = getY();
-    }
-    void move(){
-        x += xVelocity;
+    public int getX(){
         return x;
-        y+= yVelocity;
+    }
+    public int getY(){
         return y;
     }
+    public void move(){
+        x += xVelocity;
+        y+= yVelocity;
+    }
+    
 }
