@@ -9,7 +9,8 @@ public class PongPaddle {
         height = h;
     }
     public int getBottomY(){
-        return y-1;
+        
+        return y+height-1;
     }
     public int getLeftX(){
         return x;
